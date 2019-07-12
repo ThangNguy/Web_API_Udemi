@@ -8,7 +8,7 @@ export class VehicleService {
   constructor(private http: HttpClient) { }
 
   getFeatures() {
-    return this.http.get('http://localhost:6253/api/features');
+    return this.http.get('http://localhost:6253/api/features').pipe(map(data => data as [] ));
   }
 
   getMakes()  {
@@ -16,7 +16,7 @@ export class VehicleService {
   }
 
   // this.http.get(this.rootURL+'/Employee')
-    
+
 //   getBy(url: string, data: any, sort?: TableSort): Observable<ResponseModel> {
 //     let requestModel = new RequestModel();
 //     requestModel.PostObject = data;
