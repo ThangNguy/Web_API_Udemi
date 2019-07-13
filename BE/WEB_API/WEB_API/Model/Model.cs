@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace vega.Models
+namespace WEB_API.Models
 {
     [Table("Models")]
     public class Model

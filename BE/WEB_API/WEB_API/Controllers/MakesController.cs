@@ -5,10 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using vega.Models;
-using vega.Persistence;
+using WEB_API.Models;
 
-namespace vega.Controllers.Resources
+namespace WEB_API.Controllers.Resources
 {
     public class MakesController : Controller
     {

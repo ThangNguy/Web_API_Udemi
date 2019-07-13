@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore.Migrations;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Vega.Migrations
+namespace WEB_API.Migrations
 {
     public partial class SeedDatabase : Migration
     {
@@ -28,8 +25,7 @@ namespace Vega.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.Sql("DELETE FROM Makes");
-            migrationBuilder.Sql("DELETE FROM Models");
+            migrationBuilder.Sql("DELETE FROM Makes WHERE Name IN ('Make1', 'Make2', 'Make3')");
         }
     }
 }

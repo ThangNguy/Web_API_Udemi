@@ -26,3 +26,17 @@ E:\Projects\Web_API_Udemi\Web_API_Udemi\BE\WEB_API\WEB_API\obj\Debug\netcoreapp2
 E:\Projects\Web_API_Udemi\Web_API_Udemi\BE\WEB_API\WEB_API\obj\Debug\netcoreapp2.2\WEB_API.dll
 E:\Projects\Web_API_Udemi\Web_API_Udemi\BE\WEB_API\WEB_API\obj\Debug\netcoreapp2.2\WEB_API.pdb
 E:\Projects\Web_API_Udemi\Web_API_Udemi\BE\WEB_API\WEB_API\obj\Debug\netcoreapp2.2\WEB_API.csprojAssemblyReference.cache
+H:\WebUdemi\Web_API_Udemi\BE\WEB_API\WEB_API\obj\Debug\netcoreapp2.2\WEB_API.csproj.CoreCompileInputs.cache
+H:\WebUdemi\Web_API_Udemi\BE\WEB_API\WEB_API\obj\Debug\netcoreapp2.2\WEB_API.RazorAssemblyInfo.cache
+H:\WebUdemi\Web_API_Udemi\BE\WEB_API\WEB_API\obj\Debug\netcoreapp2.2\WEB_API.RazorAssemblyInfo.cs
+H:\WebUdemi\Web_API_Udemi\BE\WEB_API\WEB_API\obj\Debug\netcoreapp2.2\WEB_API.AssemblyInfoInputs.cache
+H:\WebUdemi\Web_API_Udemi\BE\WEB_API\WEB_API\obj\Debug\netcoreapp2.2\WEB_API.AssemblyInfo.cs
+H:\WebUdemi\Web_API_Udemi\BE\WEB_API\WEB_API\obj\Debug\netcoreapp2.2\WEB_API.dll
+H:\WebUdemi\Web_API_Udemi\BE\WEB_API\WEB_API\obj\Debug\netcoreapp2.2\WEB_API.pdb
+H:\WebUdemi\Web_API_Udemi\BE\WEB_API\WEB_API\bin\Debug\netcoreapp2.2\WEB_API.deps.json
+H:\WebUdemi\Web_API_Udemi\BE\WEB_API\WEB_API\bin\Debug\netcoreapp2.2\WEB_API.runtimeconfig.json
+H:\WebUdemi\Web_API_Udemi\BE\WEB_API\WEB_API\bin\Debug\netcoreapp2.2\WEB_API.runtimeconfig.dev.json
+H:\WebUdemi\Web_API_Udemi\BE\WEB_API\WEB_API\bin\Debug\netcoreapp2.2\WEB_API.dll
+H:\WebUdemi\Web_API_Udemi\BE\WEB_API\WEB_API\bin\Debug\netcoreapp2.2\WEB_API.pdb
+H:\WebUdemi\Web_API_Udemi\BE\WEB_API\WEB_API\obj\Debug\netcoreapp2.2\WEB_API.RazorTargetAssemblyInfo.cache
+H:\WebUdemi\Web_API_Udemi\BE\WEB_API\WEB_API\obj\Debug\netcoreapp2.2\WEB_API.csprojAssemblyReference.cache

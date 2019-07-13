@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
-using vega.Models;
+using WEB_API.Models;
 
-namespace vega.Controllers.Resources
+namespace WEB_API.Controllers.Resources
 {
     public class VehicleResource
     {
