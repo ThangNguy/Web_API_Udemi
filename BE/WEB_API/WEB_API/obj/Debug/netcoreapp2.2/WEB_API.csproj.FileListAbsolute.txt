@@ -39,4 +39,3 @@ H:\WebUdemi\Web_API_Udemi\BE\WEB_API\WEB_API\bin\Debug\netcoreapp2.2\WEB_API.run
 H:\WebUdemi\Web_API_Udemi\BE\WEB_API\WEB_API\bin\Debug\netcoreapp2.2\WEB_API.dll
 H:\WebUdemi\Web_API_Udemi\BE\WEB_API\WEB_API\bin\Debug\netcoreapp2.2\WEB_API.pdb
 H:\WebUdemi\Web_API_Udemi\BE\WEB_API\WEB_API\obj\Debug\netcoreapp2.2\WEB_API.RazorTargetAssemblyInfo.cache
-H:\WebUdemi\Web_API_Udemi\BE\WEB_API\WEB_API\obj\Debug\netcoreapp2.2\WEB_API.csprojAssemblyReference.cache
