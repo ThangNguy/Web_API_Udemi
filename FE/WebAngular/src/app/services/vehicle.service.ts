@@ -1,34 +1,94 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { map, filter, switchMap } from 'rxjs/operators';
+import { map, filter, switchMap, tap, catchError  } from 'rxjs/operators';
+import { APIUrl } from '../api/api';
+import { SaveVehicle, Feature, Make, Vehicle } from '../models/vehicle';
+import { Observable, of } from 'rxjs';
 
 @Injectable()
 export class VehicleService {
 
   constructor(private http: HttpClient) { }
 
-  getFeatures() {
-    return this.http.get('http://localhost:6253/api/features').pipe(map(data => data as [] ));
+  getFeatures(): Observable<Feature[]> {
+    return this.http.get<Feature[]>(APIUrl.ROOT_URL + 'api/features').pipe(
+      tap(res => res),
+      catchError(error =>  of([]))
+      );
   }
 
-  getMakes()  {
-    return this.http.get('http://localhost:6253/api/makes').pipe(map(data => data as []));
+  getMakes(): Observable<Make[]> {
+    return this.http.get<Make[]>(APIUrl.ROOT_URL + 'api/makes').pipe(
+      tap(res => res),
+      catchError(error =>  of([]))
+      );
   }
 
-  // this.http.get(this.rootURL+'/Employee')
+  create(vehicle) {
+    return this.http.post(APIUrl.ROOT_URL + 'api/vehicles', vehicle).pipe(
+      tap(res => res),
+      catchError(error =>  of([]))
+      );
+  }
 
-//   getBy(url: string, data: any, sort?: TableSort): Observable<ResponseModel> {
-//     let requestModel = new RequestModel();
-//     requestModel.PostObject = data;
+  getVehicle(id): Observable<Vehicle[]> {
+    return this.http.get<Vehicle[]>(APIUrl.ROOT_URL + 'api/vehicles/' + id).pipe(
+      tap(res => res),
+      catchError(error =>  of([]))
+      );
+  }
 
-//     if (sort != null) {
-//         requestModel.SortDTO = sort;
-//     }
+  update(vehicle: SaveVehicle) {
+      return this.http.put(APIUrl.ROOT_URL + 'api/vehicles/' + vehicle.id, vehicle).pipe(
+        tap(res => res),
+        catchError(error =>  of([]))
+        );
+  }
 
-//     return this.http.post<ResponseModel>(url, requestModel).map((res: ResponseModel) => {
-//         return res
-//     }).catch(error => {
-//         return this.handleError(error);
-//     });
-// }
+  delete(id) {
+    return this.http.delete(APIUrl.ROOT_URL + '/api/vehicles/' + id).pipe(
+      tap(res => res),
+      catchError(error =>  of([]))
+      );
+  }
+
+  // handleError(errorRequest) {
+  //   return Observable.throw(errorRequest);
+    // if (errorRequest.status === 401) {
+    //     let status = new ResponseModel();
+    //     status.Code = 901;
+    //     return Observable.throw(status);
+    // }
+    // else {
+    //     let status = new ResponseModel();
+    //     status.Code = 1000;
+    //     return Observable.throw(status);
+    // }
+  // }
+  // getFeatures() {
+  //   return this.http.get(APIUrl.ROOT_URL + 'api/features').pipe(map(data => data as [] ));
+  // }
+
+  // getMakes()  {
+  //   return this.http.get(APIUrl.ROOT_URL + 'api/makes').pipe(map(data => data as []));
+  // }
+
+  // create(vehicle) {
+  //   return this.http.post(APIUrl.ROOT_URL + 'api/vehicles', vehicle).pipe(map(res => res as []));
+  // }
+
+  // getVehicle(id) {
+  //   return this.http.get(APIUrl.ROOT_URL + 'api/vehicles/' + id)
+  //     .pipe(map(res => res as []));
+  // }
+
+  // update(vehicle: SaveVehicle) {
+  //   return this.http.put(APIUrl.ROOT_URL + 'api/vehicles/' + vehicle.id, vehicle)
+  //     .pipe(map(res => res as []));
+  // }
+
+  // delete(id) {
+  //   return this.http.delete(APIUrl.ROOT_URL + '/api/vehicles/' + id)
+  //     .pipe(map(res => res as []));
+  // }
 }

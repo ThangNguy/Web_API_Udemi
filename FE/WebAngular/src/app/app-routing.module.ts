@@ -3,9 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { VehicleFormComponent } from './vehicle-form/vehicle-form.component';
 
 const routes: Routes = [
-  {
-    path: 'vehicles/new', component: VehicleFormComponent
-  }
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'vehicles/new', component: VehicleFormComponent },
+  { path: 'vehicles/:id', component: VehicleFormComponent },
+  { path: '**', redirectTo: 'home' }
 ];
 
 @NgModule({

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "H:\\WebUdemi\\Web_API_Udemi\\BE\\WEB_API\\WEB_API\\WEB_API.csproj": {}
+    "E:\\Projects\\Web_API_Udemi\\Web_API_Udemi\\BE\\WEB_API\\WEB_API\\WEB_API.csproj": {}
   },
   "projects": {
-    "H:\\WebUdemi\\Web_API_Udemi\\BE\\WEB_API\\WEB_API\\WEB_API.csproj": {
+    "E:\\Projects\\Web_API_Udemi\\Web_API_Udemi\\BE\\WEB_API\\WEB_API\\WEB_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\WebUdemi\\Web_API_Udemi\\BE\\WEB_API\\WEB_API\\WEB_API.csproj",
+        "projectUniqueName": "E:\\Projects\\Web_API_Udemi\\Web_API_Udemi\\BE\\WEB_API\\WEB_API\\WEB_API.csproj",
         "projectName": "WEB_API",
-        "projectPath": "H:\\WebUdemi\\Web_API_Udemi\\BE\\WEB_API\\WEB_API\\WEB_API.csproj",
-        "packagesPath": "C:\\Users\\nguyt\\.nuget\\packages\\",
-        "outputPath": "H:\\WebUdemi\\Web_API_Udemi\\BE\\WEB_API\\WEB_API\\obj\\",
+        "projectPath": "E:\\Projects\\Web_API_Udemi\\Web_API_Udemi\\BE\\WEB_API\\WEB_API\\WEB_API.csproj",
+        "packagesPath": "C:\\Users\\MyPC\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\Web_API_Udemi\\Web_API_Udemi\\BE\\WEB_API\\WEB_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\nguyt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MyPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
