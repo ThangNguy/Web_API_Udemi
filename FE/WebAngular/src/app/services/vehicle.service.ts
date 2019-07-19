@@ -5,6 +5,10 @@ import { APIUrl } from '../api/api';
 import { SaveVehicle, Feature, Make, Vehicle } from '../models/vehicle';
 import { Observable, of } from 'rxjs';
 
+const httpOptions = {
+  headers: new HttpHeaders({ 'Content-Type': 'application/json'})
+};
+
 @Injectable()
 export class VehicleService {
 
@@ -24,8 +28,8 @@ export class VehicleService {
       );
   }
 
-  create(vehicle) {
-    return this.http.post(APIUrl.ROOT_URL + 'api/vehicles', vehicle).pipe(
+  create(vehicle: SaveVehicle): Observable<SaveVehicle[]> {
+    return this.http.post<SaveVehicle[]>(APIUrl.ROOT_URL + 'api/vehicles', vehicle, httpOptions).pipe(
       tap(res => res),
       catchError(error =>  of([]))
       );
